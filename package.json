@@ -17,7 +17,8 @@
     "html:serve": "live-server ./dist",
     "fn:serve": "netlify-lambda serve functions",
     "fn:build": "netlify-lambda build functions",
-    "build": "npm run fn:build"
+    "build": "npm run fn:build",
+    "serve": "npm run fn:serve"
   },
   "repository": {
     "type": "git",
