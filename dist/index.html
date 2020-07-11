@@ -1,53 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
+
+<head>
+    <meta charset="healthysurprise-app">
+    <meta name="description" content="healthysurprise app">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
     <title>HealthySurprise</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Maven+Pro|Yrsa|Press+Start+2P"
-      rel="stylesheet"
-    />
-    <meta name="theme-color" content="#fafafa" />
-  </head>
 
-  <body>
-	<style>
-      .github-corner:hover .octo-arm {
-        animation: octocat-wave 560ms ease-in-out;
-      }
-      @keyframes octocat-wave {
-        0%,
-        100% {
-          transform: rotate(0);
-        }
-        20%,
-        60% {
-          transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-          transform: rotate(10deg);
-        }
-      }
-      @media (max-width: 500px) {
-        .github-corner:hover .octo-arm {
-          animation: none;
-        }
-        .github-corner .octo-arm {
-          animation: octocat-wave 560ms ease-in-out;
-        }
-      }
-    </style>
-    <p class="successMsg" role="alert" hidden>Surprise sent...</p>
-    <p class="errorMsg" role="alert" hidden>Something went wrong...</p>
-    <form name="contact" class="form" method="POST" data-netlify="true">
-      <h1>Want to send healthy surprise to your friends ?</h1>
-      <button class="btn" type="submit">Send Surprise!</button>
-    </form>
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
 
-    <script>
+    <!-- Core Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+	  <script>
       const form = document.querySelector('form');
       form.addEventListener('submit', async event => {
         event.preventDefault();
@@ -80,5 +52,799 @@
         }
       });
     </script>
-  </body>
+    <script>
+	var element, email,lemail;
+	function fsubmit()
+{
+		
+	element = document.getElementById("contact");
+	email = document.getElementById("useremail");
+	lemail = document.getElementById("email");
+	lemail.value = email.value;
+	element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+}
+	</script>
+
+</head>
+
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="colorlib-load"></div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header_area animated">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Menu Area Start -->
+                <div class="col-12 col-lg-10">
+                    <div class="menu_area">
+			
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <!-- Logo -->                         
+                            <!-- Menu Area -->
+                            <div class="collapse navbar-collapse" id="ca-navbar">
+                                <ul class="navbar-nav ml-auto" id="nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#home">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#features">How it helps</a>
+                                    </li>                                   
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#pricing">How to Send</a>
+                                    </li>                                                                     
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact">Contact</a>
+                                    </li>
+                                </ul>
+                                <div class="sing-up-button d-lg-none">
+                                    <a href="#contact">Try HealthySurprise!!</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Signup btn -->
+                <div class="col-12 col-lg-2">
+                    <div class="sing-up-button d-none d-lg-block">
+                        <a href="#contact">Try Surprises for Free</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Wellcome Area Start ***** -->
+    <section class="wellcome_area clearfix" id="home">
+	<!-- Welcome thumb -->
+        <div class="welcome-thumb wow fadeInDown" style="top:20%" data-wow-delay="0.5s">
+            <img src="img/bg-img/welcome-img.png" alt="">
+        </div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 col-md">
+                    <div class="wellcome-heading">
+                        <h2>HealthySurprise</h2>
+                        <h3>HS</h3>
+						<br>
+						<br>
+                        <p>Inspire people,friends or society towards healthy,socially connected and motivated society by sending healthy surprises and create healthy communities further to pursue healthy activities with them as healthy lifestyles.</p>
+                    </div>
+                    <div class="get-start-area">
+                        <!-- Form Start -->
+                        <form action="#contact" method="post" class="form-inline">
+                            <input type="text" class="form-control text" placeholder="Send Surprises" id="surprises">
+                            <input type="button" class="submit" value="Get Started" href="#contact">
+                        </form>
+                        <!-- Form End -->
+                    </div>
+                </div>
+			
+            </div>
+        </div>
+        
+    </section>
+    <!-- ***** Wellcome Area End ***** -->
+
+    <!-- ***** Special Area Start ***** -->
+    <section class="special-area bg-white section_padding_100" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading Area -->
+                    <div class="section-heading text-center">
+                        <h2>Why Is It Special</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Single Special Area -->
+                <div class="col-12 col-md-4">
+                    <div class="single-special text-center wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="single-icon">
+                            <i class="ti-mobile" aria-hidden="true"></i>
+                        </div>
+                        <h4>Connect with Friends</h4>
+                        <p>We love to surprise old friends/relatives/colleagues/communities with something special as an event .Many of the times we wait for any such lucky event to happen and cherish the past memories .Let's give this a healthy purpose with HealthySurprise.</p>
+                    </div>
+                </div>
+                <!-- Single Special Area -->
+                <div class="col-12 col-md-4">
+                    <div class="single-special text-center wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="single-icon">
+                            <i class="ti-ruler-pencil" aria-hidden="true"></i>
+                        </div>
+                        <h4>Be Healthy</h4>
+                        <p>People adapt to healthy lifestyle by doing yoga,meditation,dance and being spiritual in their lifestyle.HealthySurprise give them a purpose to do so.Every aspect of wellness can affect a person’s life.Working toward all of them in one way or another is a great
+						goal, because wellness relates directly to the quality of a person’s life.  </p>
+                    </div>
+                </div>
+                <!-- Single Special Area -->
+                <div class="col-12 col-md-4">
+                    <div class="single-special text-center wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="single-icon">
+                            <i class="ti-settings" aria-hidden="true"></i>
+                        </div>
+                        <h4>Create Communities and do healthy activities together</h4>
+                        <p>People love to do activities togther and get motovation to do so from each other .HealthySurprise will act as connecting platform for the same. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Special Description Area -->
+        <div class="special_description_area mt-150">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="special_description_img">
+                            <img src="img/bg-img/special1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-5 ml-xl-auto">
+                        <div class="special_description_content">
+                            <h2>Our Best Propositions for People!</h2>
+                            <p>
+							Life demands, stress, crisis, or trauma can impact or alter our routines and habits. This can
+							lead to emotional (anxiety, depression), social (cranky, isolated, angry), or physical (tired,
+							agitated) imbalances.Establishing new, better habits that support our wellness goals and values can be
+							challenging, but worth it. Developing healthier routines and habits in our lives can lead to
+							positive feelings (emotional), relationship satisfaction (social), increased energy (physical),
+							inspiration (emotional), and a feeling that we are using our creative talents, skills, and
+							abilities to engage in activities (occupational, intellectual, spiritual).We may already have regular practices that make us feel better, such as mindfulness exercises, meditation or yoga, or calls to friends.HealthySurprise is helping you out in increasing activities that contribute to our wellness and connecting with others for your social well being. </p>                   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ***** Special Area End ***** -->
+
+    <!-- ***** Awesome Features Start ***** -->
+    <section class="awesome-feature-area bg-white section_padding_0_50 clearfix" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Heading Text -->
+                    <div class="section-heading text-center">
+                        <h2>Why HealthySurprises For Community</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature">
+                        <i class="ti-user" aria-hidden="true"></i>
+                        <h5>Motivation</h5>
+                        <p>Activation ,Persistence and intensity are three pillars of motivation which we always need and look for at various times .We promote this and wants to create an inspiring community of healthy people with healthy lifestyles.</p>
+                    </div>
+                </div>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature">
+                        <i class="ti-pulse" aria-hidden="true"></i>
+                        <h5>Environmental Wellness </h5>
+                        <p>Ability to promote health meausres that inprove the standard of living and quality of life in the community .</p>
+                    </div>
+                </div>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature">
+                        <i class="ti-dashboard" aria-hidden="true"></i>
+                        <h5>Feelings/Emotions</h5>
+                        <p> Do you allow yourself to be open to and acknowledge your feelings without judgment? Have you found and developed safe relationships with people or groups where you can express your feelings and thoughts? We want to create communities which feel comfortable to share feelings based on interests which deeply affects us .
+						</p>
+                    </div>
+                </div>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature">
+                        <i class="ti-palette" aria-hidden="true"></i>
+                        <h5> Social Wellness</h5>
+                        <p>The Social Wellness Dimension involves having healthy relationships with friends, family,
+						and the community, and having an interest in and concern for the needs of others and
+						humankind.We promote collboration and connection in unique way . </p>
+                    </div>
+                </div>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature">
+                        <i class="ti-crown" aria-hidden="true"></i>
+                        <h5>Occupational Wellness</h5>
+                        <p>Do you schedule time for leisure? Are you spending time with friends,taking nature walks, scheduling massages, or doing whatever it takes to relax?
+							Are you thinking about how you spend time each day and considering volunteer work in the community? HealthySurprise try to give you a healthy reason for spending quality time.</p>
+                    </div>
+                </div>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature">
+                        <i class="ti-headphone" aria-hidden="true"></i>
+                        <h5>Managing Stress </h5>
+                        <p>Stress can have a positive effect on your thoughts, emotions, behaviours and body reactions. Stress is more likely to result in positive outcomes if you see it as a challenge or something you can strive to overcome. It can help motivate you to work hard. Stress can also lead to positive effects if you respond with healthy behaviours that improve your situation. You can experience the positive effects of stress even in the face of some negative effects.HealthySurprise is all about creating that environment of positive effects. </p>
+                    </div>
+                </div>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature">
+                        <i class="ti-user" aria-hidden="true"></i>
+                        <h5>Creating Balance</h5>
+                        <p>Creating balance in our lives is an important part of wellness. Overall, a balanced life can mean many things, depending on culture, circumstances, resources, and other factors.Balance means making sure we have time to do the things that make us feel happy and fulfilled. This includes working (paid or unpaid), having fun, spending time with family and friends, participating in the community, being physically active—including sexually—,praying, and relaxing and sleeping. Because we each have individual needs, preferences, and capabilities, what we consider “balance” will also look different. And it’s important for us to re-balance from time to time, to adjust to what is going on in our lives.It's time to rebalance ourselves with HealthySurprises.
+                        </p>
+                    </div>
+                </div>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature">
+                        <i class="ti-ruler-pencil" aria-hidden="true"></i>
+                        <h5>Self Care </h5>
+                        <p>Discover what you like to do best, and do it often. It will help keep your spirits and emotions up.Find an outlet for physical activity, such as a sports
+			league or a gym/fitness center.Take some time to yourself regularly. Identify resources that can help you with a sleep
+			schedule or ideas for meal planning.Practice positive self-affirmations. Develop a positive
+			statement to repeat to yourself daily. When you change your thoughts, you can change your mood and
+			attitude. HealthySurprise is creating virtual environment for all this to happen .
+                        </p>
+                    </div>
+                </div>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature">
+                        <i class="ti-mobile" aria-hidden="true"></i>
+                        <h5>Prevent Loneliness and mental health issues  </h5>
+                        <p>People often blame technology for the prevalence of loneliness, pointing out that we spend too much time scrolling through social media and not enough of it but how you use such platforms seems to matter more than how much you do so. We can all benefit from developing digital habits that support meaningful human connections—especially now that it may be our only option until the outbreak calms.HealthySurprise do this with minimal use of tech and sound mental health practices on our platform .
+                        </p>
+                    </div>
+                </div>
+                <!-- Single Feature Start -->
+            </div>
+        </div>
+    </section>
+    <!-- ***** Awesome Features End ***** -->
+
+    <!-- ***** Awesome Features Start ***** -->
+    <!-- ***** Awesome Features End ***** -->
+
+    <!-- ***** Video Area Start ***** -->
+    <div class="video-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Video Area Start -->
+                    <div class="video-area" style="background-image: url(img/bg-img/video.jpg);">
+                        <div class="video-play-btn">
+                            <a href="" class="video_btn">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Video Area End ***** -->
+
+    <!-- ***** Cool Facts Area Start ***** -->
+    <section class="cool_facts_area clearfix">
+        <div class="container">
+            <div class="row">
+                <!-- Single Cool Fact-->
+                <div class="col-12 col-md-3 col-lg-3">
+                    <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="counter-area">
+                            <h3>
+                                <span class="counter">120</span>
+                            </h3>
+                        </div>
+                        <div class="cool-facts-content">
+                            <i class="ion-arrow-down-a"></i>
+                            <p>Surprises Shared
+                                <br> on Social Platform</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Cool Fact-->
+                <div class="col-12 col-md-3 col-lg-3">
+                    <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="counter-area">
+                            <h3>
+                                <span class="counter">120</span>
+                            </h3>
+                        </div>
+                        <div class="cool-facts-content">
+                            <i class="ion-happy-outline"></i>
+                            <p>HealthySurprise
+                                <br> Users</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Cool Fact-->
+                <div class="col-12 col-md-3 col-lg-3">
+                    <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="counter-area">
+                            <h3>
+                                <span class="counter">4</span>
+                            </h3>
+                        </div>
+                        <div class="cool-facts-content">
+                            <i class="ion-person"></i>
+                            <p>HealthySurprise
+                                <br>Gifts</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Cool Fact-->
+                <div class="col-12 col-md-3 col-lg-3">
+                    <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="counter-area">
+                            <h3>
+                                <span class="counter">10</span>
+                            </h3>
+                        </div>
+                        <div class="cool-facts-content">
+                            <i class="ion-ios-star-outline"></i>
+                            <p>TOTAL
+                                <br>Surprises RATES</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Cool Facts Area End ***** -->
+
+
+    <!-- ***** Pricing Plane Area Start *****==== -->
+    <section class="pricing-plane-area section_padding_100_70 clearfix" id="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Heading Text  -->
+                    <div class="section-heading text-center">
+                        <h2>How To Send Surprises</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <!-- Package Price  -->
+                    <div class="single-price-plan text-center">
+                        <!-- Package Text  -->
+                        <div class="package-plan">
+                            <h5>Healthy Surprise Usage</h5>
+                            <div class="ca-price d-flex justify-content-center">                               
+                                <h4>Using social platform</h4>
+                            </div>
+                        </div>
+                        <div class="package-description">
+                            <p>Open Healthy Surprise Social network</p>
+                            <p>Create Healthy Surprise as post/video of urs to share</p>
+                            <p>Tag friend to further carry on with the surprise</p>
+                            <p>Post the surprise </p>
+                            <p>Make it private/public</p>
+                        </div>
+                        <!-- Plan Button  -->
+                        <div class="plan-button">
+                            <a href="https://healthysurprise.tribe.so/">Use the Social Network</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <!-- Package Price  -->
+                    <div class="single-price-plan text-center">
+                        <!-- Package Text  -->
+                        <div class="package-plan">
+                            <h5>Healthy Surprise Usage</h5>
+                            <div class="ca-price d-flex justify-content-center">                               
+                                <h4>Using current site</h4>
+                            </div>
+                        </div>
+                        <div class="package-description">
+                            <p>Navigate to Send Surprise Section below</p>
+                            <p>Enter the details of person you want to send the surprise </p>
+                            <p>Enter your and receiver's phone number </p>
+                            <p>Message will be sent on phone with surprise link</p>
+                            <p>All surprises sent can be seen on social network of HealthySurprise</p>
+                        </div>
+                        <!-- Plan Button  -->
+                        <div class="plan-button">
+                            <a href="#contact">Use the HealthySurprise Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** App Screenshots Area Start ***** -->
+    <section class="app-screenshots-area bg-white section_padding_0_100 clearfix" id="screenshot">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <!-- Heading Text  -->
+                    <div class="section-heading">
+                        <h2>Healthy Surprise look</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- App Screenshots Slides  -->
+                    <div class="app_screenshots_slides owl-carousel">
+                        <div class="single-shot">
+                            <img src="img/scr-img/1shot.jpg" alt="">
+                        </div>
+                        <div class="single-shot">
+                            <img src="img/scr-img/2shot.jpg" alt="">
+                        </div>
+                        <div class="single-shot">
+                            <img src="img/scr-img/3shot.jpg" alt="">
+                        </div>
+                        <div class="single-shot">
+                            <img src="img/scr-img/4shot.jpg" alt="">
+                        </div>
+                        <div class="single-shot">
+                            <img src="img/scr-img/5shot.jpg" alt="">
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** App Screenshots Area End *****====== -->
+
+    <!-- ***** Pricing Plane Area Start *****==== -->
+    <!-- ***** Pricing Plane Area End ***** -->
+
+    <!-- ***** Client Feedback Area Start ***** -->
+    <section class="clients-feedback-area bg-white section_padding_100 clearfix" id="testimonials">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div class="slider slider-for">
+					    <!-- Client Feedback Text  -->
+                        <div class="client-feedback-text text-center">
+                            <div class="client">
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="client-description text-center">
+                                <p>Health is a state of complete physical, mental and social well-being, and not merely the absence of disease or infirmity.</p>
+                            </div>
+                            <div class="star-icon text-center">
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                            </div>
+                            <div class="client-name text-center">
+                                <h5>Health Expert</h5>
+                                <p>Article 1948 </p>
+                            </div>
+                        </div>
+                        <!-- Client Feedback Text  -->
+                        <div class="client-feedback-text text-center">
+                            <div class="client">
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="client-description text-center">
+                                <p> When one is doing well; it helps balance all of the others.THIS IS WELLNESS, A BALANCE IN ALL OF THE DIMENSIONS OF HEALTH. </p>
+                            </div>
+                            <div class="star-icon text-center">
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                            </div>
+                            <div class="client-name text-center">
+                                <h5>Liza</h5>
+                                <p>Mental Health Expert</p>
+                            </div>
+                        </div>
+                        <!-- Client Feedback Text  -->
+                        <div class="client-feedback-text text-center">
+                            <div class="client">
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="client-description text-center">
+                                <p>A great hallmark of mental wellness is the ability to be in the present moment, fully and with no thoughts of being elsewhere</p>
+                            </div>
+                            <div class="star-icon text-center">
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                            </div>
+                            <div class="client-name text-center">
+                                <h5>Nancy</h5>
+                                <p>Mental Health Survey</p>
+                            </div>
+                        </div>
+                        <!-- Client Feedback Text  -->
+                        <div class="client-feedback-text text-center">
+                            <div class="client">
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="client-description text-center">
+                                <p>Every aspect of wellness can affect a person’s life.
+Working toward all of them in one way or another is a great
+goal, because wellness relates directly to the quality of a
+person’s life. </p>
+                            </div>
+                            <div class="star-icon text-center">
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                            </div>
+                            <div class="client-name text-center">
+                                <h5>SAMHSA</h5>
+                                <p>Survey</p>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <!-- Client Thumbnail Area -->
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="slider slider-nav">
+                        <div class="client-thumbnail">
+                            <img src="img/bg-img/client-3.jpg" alt="">
+                        </div>
+                        <div class="client-thumbnail">
+                            <img src="img/bg-img/client-2.jpg" alt="">
+                        </div>
+                        <div class="client-thumbnail">
+                            <img src="img/bg-img/client-1.jpg" alt="">
+                        </div>
+                        <div class="client-thumbnail">
+                            <img src="img/bg-img/client-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Client Feedback Area End ***** -->
+
+    <!-- ***** CTA Area Start ***** -->
+    <section class="our-monthly-membership section_padding_50 clearfix">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="membership-description">
+                        <h2>Join Healthy Surprise Journey</h2>
+                        <p> Smile together and create healthier lives by sending healthy surprises !!</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="get-started-button wow bounceInDown" data-wow-delay="0.5s">
+                        <a href="#contact">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** CTA Area End ***** -->
+
+    <!-- ***** Our Team Area Start ***** -->
+    <section class="our-Team-area bg-white section_padding_100_50 clearfix" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <!-- Heading Text  -->
+                    <div class="section-heading">
+                        <h2>Our Team</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">               
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-team-member">
+                        <div class="member-image">
+                            <img src="img/team-img/team-4.png" alt="">
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a href="#">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-text">
+                            <h4>Puneet Behl</h4>
+                            <p>Product Design and Development</p>
+                        </div>
+                    </div>
+                </div>             
+            </div>
+        </div>
+    </section>
+    <!-- ***** Our Team Area End ***** -->
+
+    <!-- ***** Contact Us Area Start ***** -->
+    <section class="footer-contact-area section_padding_100 clearfix" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Heading Text  -->
+                    <div class="section-heading">
+                        <h2>Get in touch with us!</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                    <div class="footer-text">
+                        <p>We'll also send your personal customized gifts to friends ,people and communities!! Get in touch</p>
+                    </div>
+                    <div class="address-text">
+                        <p>
+                            <span>Address:</span> 22 E.4, Vatika India, sector 82, Gurugram, India</p>
+                    </div>
+                    
+                    <div class="email-text">
+                        <p>
+                            <span>Email:</span> info@healthysurprise.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Form Start-->
+                    <div class="contact_from">					
+                        <form name="contact" class="form" method="POST" data-netlify="true">
+                            <!-- Message Input Area Start -->
+                            <div class="contact_input_area">
+                                <div class="row">
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="sender_phone_no" id="sender_no" placeholder="Your Phone" required>
+                                        </div>
+                                    </div>
+									 <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="receiver_phone_no" id="receiver_no" placeholder="Phone no to send the surprise" required>
+                                        </div>
+                                    </div>
+									 <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="friend_name" id="friend_name" placeholder="Name of the friend to extend surprises further!!" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Your Surpise and link to the same*" required></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <button type="submit" class="btn submit-btn">Send Surprise Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Message Input Area End -->
+                        </form>
+						  <p class="successMsg" role="alert" hidden>Surprise sent...</p>
+						  <p class="errorMsg" role="alert" hidden>Something went wrong...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contact Us Area End ***** -->
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-social-icon text-center section_padding_70 clearfix">
+        <!-- footer logo -->
+        <div class="footer-text">
+            <h2>HealthySurprise.</h2>
+        </div>
+        <!-- social icon-->
+        <div class="footer-social-icon">
+            <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="active fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="footer-menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms &amp; Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Foooter Text-->
+        <div class="copyright-text">
+            <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
+            <p>Copyright HealthySurprise. Designed by
+                <a href="www.healthysurprise.com" target="_blank">HealthySurprise Team</a>
+            </p>
+        </div>
+    </footer>
+    <!-- ***** Footer Area Start ***** -->
+
+    <!-- Jquery-2.2.4 JS -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap-4 Beta JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins JS -->
+    <script src="js/plugins.js"></script>
+    <!-- Slick Slider Js-->
+    <script src="js/slick.min.js"></script>
+    <!-- Footer Reveal JS -->
+    <script src="js/footer-reveal.min.js"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+</body>
+
 </html>
